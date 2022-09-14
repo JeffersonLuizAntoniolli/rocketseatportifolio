@@ -1,0 +1,124 @@
+/*Removendo Propriedades de Todos os Elementos*/
+/*Configuração para Página e retirar margens de elementos que vêm com algum padrão*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Redefinindo Tamanho da Caixa*/
+}
+
+/*Tirando linha do link que vêm por padrão*/
+a{
+  text-decoration: none;
+}
+
+body {
+  background: #EDF2FF;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/*Div Principal no Body do Projeto*/
+.container {
+  text-align: center;
+  width:  300px;
+  margin: 60px auto 60px;
+}
+
+/*Configurando para todas imagens por padrão tenha 100% do tamanho em determinado elemento*/
+img {
+  width: 100%;
+}
+
+/*Personalizando nossa imagem que é nosso avatar no projeto */
+img.avatar {
+  border-radius: 50%; /*Arredonda a borda da caixa ou imagem*/
+  height: 100px;
+  width: 100px;
+  padding: 3.7px;
+  border: #4263EB solid 4px;
+}
+
+h1 {
+  font-size:  32px;
+  color: #00082F;
+  margin-top: 24px ; 
+  margin-bottom: 8px ;
+  display: inline;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: #00082F;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+/*Tirar os marcadores de listagem padrões das tags 'ul' */
+/*Ajustando tamanho das listagens da tag 'ul'*/
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+/*Procurando dentro de toda tag 'ul' e tag 'li', a tag 'a'*/
+ul li a {
+  height: 53px;
+  display: flex; /*Destrava as propriedades para usar comandos abaixo*/
+  align-items: center; /*Alinha altura no centro da caixa*/
+  justify-content: center; /*Alinha largura no centro da caixa*/ 
+  background-color: #4263EB; /*Número Hexadecimal -> HEX: 0 - F*/
+  color: white;
+  text-transform: uppercase; /*Faz todo texto ficar em caixa alta*/
+  font-size: 14px; /*Tamanho da fonte*/
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+}
+
+/*pseudo class */
+ul li a:hover {
+  background: #364FC7;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  color: #00082F;
+  opacity: 0.6;
+  transition: opacity 400ms; /*Configura transição de 400 ms para ativar  o hover*/
+}
+/*Sub Classe que ativa transição e muda opacidade da classe footer*/
+footer:hover{
+  opacity: 1;
+}
+
+footer a {
+  color: #00082F;
+}
+
+/*Rascunho Geral quando for mexer em um Container/Caixa (Div) */
+  /*1. Sobre Margin e Padding*/
+    /*Margin: Oque está do lado de fora da borda (Border) do Container/Caixa */
+    /*Border: Elemento entre está Margin o Padding e representa o Container/Caixa */
+    /*Padding: Oque está do lado de dentro da borda (Border) do Container/Caixa */
+  
+  /*2. Sobre diplay 'inline': */
+    /*Se mantém na linha e só mantém o tamanho do conteúdo*/  
+    /*Não recebem propriedade de Altura ou Largura, Margem Superior ou Inferior*/
+    /*As tags 'a' e 'img'  tem elas por padrão*/
+
+  /*3. Sobre diplay 'block': */
+    /*Maioria das tags, por exemplo, 'h1'*/
+    /*Vai receber propriedades de alterar largura, altura, outros. Não vai manter em linha*/
+
+  /*4. Sobre diplay 'flex': */
+    /*Ajuda para destravar algumas propriedades, como margem, largura, entre outros*/
+    /*Tambem coloca propriedades para dentro da caixa/container */
+    /*Permite mexer dentro do conteudo da caixa/conteiner, como propriedade 'align' */
+
+  /*5. Número Hexadecimal -> HEX: 0 até F (Exemplo: 4263EB) */
+    /*2 Primeiros números, representa vermelho (42)*/
+    /*2 Proximos números, representa verde (63)*/
+    /*2 Ultimos números, representa azul (EB)*/
